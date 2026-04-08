@@ -1,0 +1,21 @@
+# Built application files
+*.apk
+*.aar
+*.ap_
+*.aab
+
+# Gradle
+.gradle/
+build/
+
+# Local configuration
+local.properties
+
+# Android Studio
+*.iml
+.idea/
+.DS_Store
+
+# Keystore (do not commit)
+*.jks
+*.keystore

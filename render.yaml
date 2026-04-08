@@ -1,0 +1,25 @@
+# Render Blueprint — CrediAI Streamlit app
+# Deploy: push to GitHub, then connect this repo at https://dashboard.render.com
+# Or use "New > Blueprint" and point to this repo.
+
+services:
+  - type: web
+    name: credi-ai
+    runtime: python
+
+    # Build
+    # Ensure secrets.toml exists so Streamlit doesn't error on cloud (uses empty values if not set via env)
+    buildCommand: |
+      mkdir -p .streamlit
+      [ -f .streamlit/secrets.toml ] || cp .streamlit/secrets.toml.example .streamlit/secrets.toml
+      pip install -r requirements.txt
+
+    # Run Streamlit; Render sets PORT (e.g. 10000)
+    startCommand: streamlit run app.py --server.address 0.0.0.0 --server.port $PORT
+
+    # Optional: reduce cold-start by keeping the app from sleeping too aggressively (paid plans)
+    # plan: starter
+
+    envVars:
+      - key: PYTHON_VERSION
+        value: "3.11.7"

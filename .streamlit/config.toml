@@ -1,0 +1,8 @@
+# CrediAI — Streamlit config (local + Render)
+[server]
+headless = true
+enableCORS = false
+enableXsrfProtection = true
+
+[browser]
+gatherUsageStats = false

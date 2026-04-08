@@ -1,0 +1,22 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+.venv/
+venv/
+env/
+
+# Streamlit / app secrets (do not commit)
+.streamlit/secrets.toml
+
+# Optional: uncomment if you don't want to commit large model files
+# models/
+
+# IDE / OS
+.idea/
+.vscode/
+.DS_Store
+*.swp
+.claude/

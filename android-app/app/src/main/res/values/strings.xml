@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">CrediAI</string>
+    <!-- Replace with your live Streamlit URL after deployment (e.g. https://your-app-name.streamlit.app) -->
+    <string name="credi_app_url">https://crediai-f2i2pznzgvytzjrdzvmajg.streamlit.app</string>
+    <string name="loading_title">Opening CrediAI…</string>
+    <string name="loading_hint">Waking server for faster load. Usually ready in a few seconds.</string>
+</resources>

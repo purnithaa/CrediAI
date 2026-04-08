@@ -1,0 +1,5 @@
+streamlit>=1.28.0
+torch
+transformers
+feedparser
+plotly>=5.18.0
